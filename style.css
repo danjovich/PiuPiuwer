@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    font-family: 'Lato', sans-serif;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+header#main-header {
+    width: 346px;
+    height: 80px;
+    margin-left: 32px;
+    margin-top: 40px;
+}
+
+header#main-header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header#main-header .logo img {
+    width: 80px;
+    height: 80px;
+}
+
+header#main-header .logo span {
+    font-family: 'Yeseva One', cursive;
+    font-size: 48px;
+    margin-left: 14px;
+}
