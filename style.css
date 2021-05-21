@@ -9,6 +9,14 @@ body {
     font-family: 'Lato', sans-serif;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+input,
+button {
+    outline: 0;
 }
 
 header#main-header {
@@ -68,5 +76,37 @@ header#main-header nav ul li img {
     width: 50px;
     height: 50px;
     margin-right: 17px;
+}
+
+section#feed .searchbar {
+    display: flex;
+    align-items: center;
+    background: #e0e0e0;
+    margin-top: 24px;
+    padding: 24px 32px;
+    border: 1px solid #6c8193;
+}
+
+section#feed .searchbar input {
+    width: 527px;
+    height: 36px;
+    border: 1px solid #6c8193;
+    padding: 0 30px 0 41px;
+    border-radius: 16px;
+    color: #b3b3b3;
+    font-size: 24px;
+    background: #fff url('images/buscar.svg') no-repeat 8px center;
+    background-size: 25px;
+
+    margin-right: 16px;
+}
+
+section#feed .searchbar input::placeholder {
+    color: #b3b3b3;
+}
+
+section#feed .searchbar img {
+    width: 36px;
+    height: 36px;
 }
 
