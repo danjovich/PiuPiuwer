@@ -5,20 +5,35 @@
 }
 
 body {
-    /* background: #fff; */
     background: #f3f3f3;
     font-family: 'Lato', sans-serif;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 input,
 button,
 textarea {
     outline: 0;
+}
+
+button {
+    text-align: center;
+    padding: 4px 16px;
+    height: fit-content;
+    font-weight: bold;
+    font-size: 14px;
+    background: #2471A3;
+    color: #fff;
+    border: 0;
+    border-radius: 16px;
+}
+
+.fixed {
+    position: fixed;
 }
 
 header#main-header {
@@ -83,15 +98,19 @@ header#main-header nav ul li img {
 
 section#feed {
     width: 652px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .25);
+    margin: 24px 0;
 }
 
 section#feed .searchbar {
     display: flex;
     align-items: center;
-    background: #e0e0e0;
-    margin-top: 24px;
+    background: #E8ECEF;
     padding: 24px 32px;
     border: 1px solid #6c8193;
+
+    position: sticky;
+    top: 0;
 }
 
 section#feed .searchbar input {
@@ -139,7 +158,7 @@ section#feed .new-piu textarea {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     border-radius: 8px;
-    background: #e0e0e0;
+    background: #E8ECEF;
 }
 
 section#feed .new-piu div {
@@ -148,17 +167,25 @@ section#feed .new-piu div {
     margin-top: 16px;
 }
 
-section#feed .new-piu button {
+/*********/
+/*********/
+/*********/
+/*********/
+/* section#feed .new-piu button {
     text-align: center;
     width: 90px;
     height: 24px;
     font-weight: bold;
     font-size: 14px;
-    background: #3f3f3f;
+    background: #2471A3;
     color: #fff;
     border: 0;
     border-radius: 16px;
-}
+} */
+/*********/
+/*********/
+/*********/
+/*********/
 
 section#feed .new-piu.too-big span {
     color: #ff5733;
@@ -167,6 +194,11 @@ section#feed .new-piu.too-big span {
 
 section#feed .new-piu.too-big textarea {
     background: #FAAF9F;
+}
+/* o span a seguir vai aparecer com frequência, por isso um único bloco de CSS */
+.name-and-username span {
+    font-weight: normal;
+    color: #b3b3b3;
 }
 
 section#feed ul.pius {
@@ -177,10 +209,6 @@ section#feed ul.pius li {
     border: 1px solid #6c8193;
     background: #fff;
     margin-top: -1px;
-}
-
-section#feed ul.pius li:last-child {
-    margin-bottom: 24px;
 }
 
 section#feed ul.pius li .info {
@@ -194,11 +222,6 @@ section#feed ul.pius li .info img {
     height: 48px;
     border-radius: 50%;
     margin-right: 8px;
-}
-
-section#feed ul.pius li .info span {
-    font-weight: normal;
-    color: #b3b3b3;
 }
 
 section#feed ul.pius li p {
@@ -215,4 +238,48 @@ section#feed ul.pius li .interactions {
 section#feed ul.pius li .interactions img {
     width: 24px;
     height: 24px;
+}
+
+aside {
+    margin: 40px 32px 0 24px;
+}
+
+aside h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+aside .profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+
+}
+
+aside .profile img {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+aside .profile .info {
+    display: flex;
+    flex-direction: column;
+}
+
+aside .profile .info button {
+    margin-top: 8px;
+}
+
+aside .trending h3 {
+    font-size: 18px;
+}
+
+aside .trending .topic {
+    background: #E8ECEF;
+    border-radius: 8px;
+    padding: 8px 0 16px 8px;
+    margin-bottom: 16px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .25);
 }

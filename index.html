@@ -13,17 +13,19 @@
 <body>
     <header id="main-header">
         <!-- Adicionar EventListener ao logo -->
-        <div class="logo">
-            <img src="images/piupiuwer.svg" alt="PiuPiuwer">
-            <h1>PiuPiuwer</h1>
+        <div class="fixed">
+            <div class="logo">
+                <img src="images/piupiuwer.svg" alt="PiuPiuwer">
+                <h1>PiuPiuwer</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" title="Seu Feed"><img src="images/feed.svg" alt="Feed"> Seu Feed</a></li>
+                    <li><a href="" title="Configurações"><img src="images/configuracoes.svg" alt="Configurações"> Configurações</a></li>
+                    <li><a href="" title="Sair"><img src="images/sair.svg" alt="Sair"> Sair</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" title="Seu Feed"><img src="images/feed.svg" alt="Feed"> Seu Feed</a></li>
-                <li><a href="" title="Configurações"><img src="images/configuracoes.svg" alt="Configurações"> Configurações</a></li>
-                <li><a href="" title="Sair"><img src="images/sair.svg" alt="Sair"> Sair</a></li>
-            </ul>
-        </nav>
     </header>
 
     <section id="feed">
@@ -44,7 +46,9 @@
             <li>
                 <div class="info">
                     <img src="images/pefil.svg" alt="Foto de Perfil">
-                    <strong>Nome <span>@username</span></strong>
+                        <div class="name-and-username">
+                        <strong>Nome <span>@username</span></strong>
+                    </div>
                 </div>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error quae delectus temporibus pariatur tempore nihil, aliquid molestiae harum neque tempora excepturi atque optio.</p>
                 <div class="interactions">
@@ -56,7 +60,9 @@
             <li>
                 <div class="info">
                     <img src="images/pefil.svg" alt="Foto de Perfil">
-                    <strong>Nome <span>@username</span></strong>
+                    <div class="name-and-username">
+                        <strong>Nome <span>@username</span></strong>
+                    </div>
                 </div>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error quae delectus temporibus pariatur tempore nihil,
                     aliquid molestiae harum neque tempora excepturi atque optio.</p>
@@ -69,7 +75,9 @@
             <li>
                 <div class="info">
                     <img src="images/pefil.svg" alt="Foto de Perfil">
-                    <strong>Nome <span>@username</span></strong>
+                    <div class="name-and-username">
+                        <strong>Nome <span>@username</span></strong>
+                    </div>
                 </div>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error quae delectus temporibus pariatur tempore nihil,
                     aliquid molestiae harum neque tempora excepturi atque optio.</p>
@@ -82,7 +90,9 @@
             <li>
                 <div class="info">
                     <img src="images/pefil.svg" alt="Foto de Perfil">
-                    <strong>Nome <span>@username</span></strong>
+                    <div class="name-and-username">
+                        <strong>Nome <span>@username</span></strong>
+                    </div>
                 </div>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error quae delectus temporibus pariatur tempore nihil,
                     aliquid molestiae harum neque tempora excepturi atque optio.</p>
@@ -95,7 +105,9 @@
             <li>
                 <div class="info">
                     <img src="images/pefil.svg" alt="Foto de Perfil">
-                    <strong>Nome <span>@username</span></strong>
+                    <div class="name-and-username">
+                        <strong>Nome <span>@username</span></strong>
+                    </div>
                 </div>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error quae delectus temporibus pariatur tempore nihil,
                     aliquid molestiae harum neque tempora excepturi atque optio.</p>
@@ -108,7 +120,9 @@
             <li>
                 <div class="info">
                     <img src="images/pefil.svg" alt="Foto de Perfil">
-                    <strong>Nome <span>@username</span></strong>
+                    <div class="name-and-username">
+                        <strong>Nome <span>@username</span></strong>
+                    </div>
                 </div>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error quae delectus temporibus pariatur tempore nihil,
                     aliquid molestiae harum neque tempora excepturi atque optio.</p>
@@ -121,7 +135,9 @@
             <li>
                 <div class="info">
                     <img src="images/pefil.svg" alt="Foto de Perfil">
-                    <strong>Nome <span>@username</span></strong>
+                    <div class="name-and-username">
+                        <strong>Nome <span>@username</span></strong>
+                    </div>
                 </div>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error quae delectus temporibus pariatur tempore nihil,
                     aliquid molestiae harum neque tempora excepturi atque optio.</p>
@@ -134,7 +150,9 @@
             <li>
                 <div class="info">
                     <img src="images/pefil.svg" alt="Foto de Perfil">
-                    <strong>Nome <span>@username</span></strong>
+                    <div class="name-and-username">
+                        <strong>Nome <span>@username</span></strong>
+                    </div>
                 </div>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error quae delectus temporibus pariatur tempore nihil, aliquid molestiae harum neque tempora excepturi atque optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa rerum consequatur, suscipit maxime vero cum dicta eum tempore laudantium debitis in aliquam eos placeat excepturi exercitationem quaerat ducimus minima ea. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi dolorum suscipit enim, sapiente eos nemo maxime rerum, sequi reiciendis voluptates velit provident totam quisquam nam? Libero fugit a culpa cumque!</p>
                 <div class="interactions">
@@ -147,7 +165,70 @@
     </section>
 
     <aside>
+        <div class="profile">
+            <img src="images/pefil.svg" alt="Foto de Perfil">
+            <div class="info">
+                <div class="name-and-username">
+                        <div class="name-and-username">
+                        <strong>Nome <span>@username</span></strong>
+                    </div>
+                </div>
+                <button>Ver Meu Perfil</button>
+            </div>
+        </div>
 
+        <div class="friends">
+            <h2>Amigos</h2>
+            <div class="profile">
+                <img src="images/pefil.svg" alt="Foto de Perfil">
+                <div class="info">
+                    <div class="name-and-username">
+                        <div class="name-and-username">
+                            <strong>Nome <span>@username</span></strong>
+                        </div>
+                    </div>
+                    <button>Ver Perfil</button>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="images/pefil.svg" alt="Foto de Perfil">
+                <div class="info">
+                    <div class="name-and-username">
+                        <div class="name-and-username">
+                            <strong>Nome <span>@username</span></strong>
+                        </div>
+                    </div>
+                    <button>Ver Perfil</button>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="images/pefil.svg" alt="Foto de Perfil">
+                <div class="info">
+                    <div class="name-and-username">
+                        <div class="name-and-username">
+                            <strong>Nome <span>@username</span></strong>
+                        </div>
+                    </div>
+                    <button>Ver Perfil</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="trending">
+            <h2>Assuntos do momento</h2>
+            <div class="topic">
+                <span>Tema</span>
+                <h3>Assunto - N pius</h3>
+            </div>
+            <div class="topic">
+                <span>Tema</span>
+                <h3>Assunto - N pius</h3>
+            </div>
+            <div class="topic">
+                <span>Tema</span>
+                <h3>Assunto - N pius</h3>
+            </div>
+        </div>
     </aside>
 </body>
 </html>
