@@ -15,7 +15,8 @@ body {
 }
 
 input,
-button {
+button,
+textarea {
     outline: 0;
 }
 
@@ -32,13 +33,13 @@ header#main-header .logo {
 }
 
 header#main-header .logo img {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
 }
 
 header#main-header .logo span {
     font-family: 'Yeseva One', cursive;
-    font-size: 48px;
+    font-size: 40px;
     margin-left: 14px;
 }
 
@@ -56,7 +57,7 @@ header#main-header nav ul {
 
 header#main-header nav ul li {
     margin-top: 16px;
-    font-size: 32px;
+    font-size: 24px;
 }
 
 header#main-header nav ul li:first-child {
@@ -73,9 +74,13 @@ header#main-header nav ul li a {
 }
 
 header#main-header nav ul li img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin-right: 17px;
+}
+
+section#feed {
+    width: 652px;
 }
 
 section#feed .searchbar {
@@ -94,7 +99,7 @@ section#feed .searchbar input {
     padding: 0 30px 0 41px;
     border-radius: 16px;
     color: #b3b3b3;
-    font-size: 24px;
+    font-size: 16px;
     background: #fff url('images/buscar.svg') no-repeat 8px center;
     background-size: 25px;
 
@@ -108,5 +113,55 @@ section#feed .searchbar input::placeholder {
 section#feed .searchbar img {
     width: 36px;
     height: 36px;
+}
+
+section#feed .new-piu {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    border: 1px solid #6c8193;
+    padding: 16px;
+}
+
+section#feed .new-piu span {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #6c8193;
+}
+
+section#feed .new-piu textarea {
+    padding: 16px;
+    resize: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    border-radius: 8px;
+    background: #e0e0e0;
+}
+
+section#feed .new-piu div {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+section#feed .new-piu button {
+    text-align: center;
+    width: 90px;
+    height: 24px;
+    font-weight: bold;
+    font-size: 14px;
+    background: #3f3f3f;
+    color: #FFF;
+    border: 0;
+    border-radius: 16px;
+}
+
+section#feed .new-piu.too-big span {
+    color: #ff5733;
+    font-weight: 900;
+}
+
+section#feed .new-piu.too-big textarea {
+    background: #FAAF9F;
 }
 
