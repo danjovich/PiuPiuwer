@@ -5,7 +5,8 @@
 }
 
 body {
-    background: #fff;
+    /* background: #fff; */
+    background: #f3f3f3;
     font-family: 'Lato', sans-serif;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
@@ -37,9 +38,10 @@ header#main-header .logo img {
     height: 60px;
 }
 
-header#main-header .logo span {
+header#main-header .logo h1 {
     font-family: 'Yeseva One', cursive;
     font-size: 40px;
+    font-weight: 400;
     margin-left: 14px;
 }
 
@@ -116,11 +118,13 @@ section#feed .searchbar img {
 }
 
 section#feed .new-piu {
+    background: #fff;
     display: flex;
     flex-direction: column;
     height: fit-content;
     border: 1px solid #6c8193;
     padding: 16px;
+    margin-top: -1px;
 }
 
 section#feed .new-piu span {
@@ -151,7 +155,7 @@ section#feed .new-piu button {
     font-weight: bold;
     font-size: 14px;
     background: #3f3f3f;
-    color: #FFF;
+    color: #fff;
     border: 0;
     border-radius: 16px;
 }
@@ -165,3 +169,50 @@ section#feed .new-piu.too-big textarea {
     background: #FAAF9F;
 }
 
+section#feed ul.pius {
+    list-style: none;
+}
+
+section#feed ul.pius li {
+    border: 1px solid #6c8193;
+    background: #fff;
+    margin-top: -1px;
+}
+
+section#feed ul.pius li:last-child {
+    margin-bottom: 24px;
+}
+
+section#feed ul.pius li .info {
+    display: flex;
+    align-items: center;
+    margin: 16px 16px;
+}
+
+section#feed ul.pius li .info img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+section#feed ul.pius li .info span {
+    font-weight: normal;
+    color: #b3b3b3;
+}
+
+section#feed ul.pius li p {
+    margin: 8px 16px;
+}
+
+section#feed ul.pius li .interactions {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    margin: 16px 142px;
+}
+
+section#feed ul.pius li .interactions img {
+    width: 24px;
+    height: 24px;
+}
