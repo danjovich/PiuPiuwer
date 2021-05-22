@@ -109,8 +109,10 @@ section#feed .searchbar {
     padding: 24px 32px;
     border: 1px solid #6c8193;
 
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
+    
 }
 
 section#feed .searchbar input {
@@ -217,11 +219,24 @@ section#feed ul.pius li .info {
     margin: 16px 16px;
 }
 
-section#feed ul.pius li .info img {
+section#feed ul.pius li .info .square,
+aside .profile .square {
+    display: flex;
+    justify-content: center;
     width: 48px;
     height: 48px;
     border-radius: 50%;
+    overflow: hidden;
     margin-right: 8px;
+}
+
+section#feed ul.pius li .info img,
+aside .profile .square img {
+    max-height: 100%;
+    /* width: 63.56px;
+    height: 48px;
+    border-radius: 55% 53%;
+    margin-right: 8px; */
 }
 
 section#feed ul.pius li p {
@@ -256,12 +271,27 @@ aside .profile {
 
 }
 
-aside .profile img {
+aside .profile .square {
+    width: 58px;
+    height: 58px;
+}
+/********/
+/********/
+/********/
+/********/
+/********/
+/********/
+/* aside .profile img {
     width: 58px;
     height: 58px;
     border-radius: 50%;
     margin-right: 16px;
-}
+} */
+/********/
+/********/
+/********/
+/********/
+/********/
 
 aside .profile .info {
     display: flex;
@@ -270,6 +300,7 @@ aside .profile .info {
 
 aside .profile .info button {
     margin-top: 8px;
+    width: 130px;
 }
 
 aside .trending h3 {
